@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.zsw</groupId>
+	<artifactId>springboot</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>springboot</name>
+	<build />
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.2.7.RELEASE</version>
+	</parent>
+<!-- 	<repositories> -->
+<!-- 		<repository> -->
+<!-- 			<id>central</id> -->
+<!-- 			<name>Maven Central Repository</name> -->
+<!-- 			<url>http://192.168.0.200:8081/repository/apa7-central/</url> -->
+<!-- 			<snapshots> -->
+<!-- 				<enabled>true</enabled> -->
+<!-- 				<updatePolicy>daily</updatePolicy>  always表示总是，never表示从不。daily（默认）表示每天，interval:X表示X分钟。 -->
+<!-- 			</snapshots> -->
+<!-- 		</repository> -->
+<!-- 	</repositories> -->
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<!-- mysql依赖 -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.42</version>
+		</dependency>
+		<!-- mybatis依赖 -->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<!-- 引入spring boot自带的pagehelper插件 -->
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper-spring-boot-starter</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+	</dependencies>
+</project>
