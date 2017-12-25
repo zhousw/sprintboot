@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan("com.mapper")
-// 告诉mapper所在的包名zhousw1
+// 告诉mapper所在的包名zhousw2
 public class App {
 	public static void main(String[] args) {
 		SpringApplication.run(App.class, args);
